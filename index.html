@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+      If you are serving your web app in a path other than the root, change the
+      href value below to reflect the base path you are serving from.
+
+      The path provided below has to start and end with a slash "/" in order for
+      it to work correctly.
+
+      For more details:
+      * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    -->
+    <base href="/">
+
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A new Flutter project.">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Your App Name">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+    <title>Your App Name</title>
+    <link rel="manifest" href="manifest.json">
+
+    <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = '"3796797257"';
+
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDyEvFXNWRJQEmR6_2WEmU5VLI8eDnhsLo",
+  authDomain: "to-do-project-d68df.firebaseapp.com",
+  projectId: "to-do-project-d68df",
+  storageBucket: "to-do-project-d68df.appspot.com",
+  messagingSenderId: "851447533851",
+  appId: "1:851447533851:web:9167f28bf81ec9aa6683be"
+};
+
+// Initialize Firebase/
+
+
+
+    </script>
+    <!-- This script adds the flutter initialization JS code -->
+    <script src="flutter.js" defer></script>
+</head>
+<body>
+<script>
+    window.addEventListener('load', function(ev) {
+      // Register service worker after the page has completely loaded.
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=' + serviceWorkerVersion);
+      }
+    });
+
+</script>
+<script>
+    // Prevent text selection after double clicking on the web page.
+    window.addEventListener('selectstart', function (e) {
+      e.preventDefault();
+    });
+
+</script>
+<div>
+    <!-- This is where your Flutter web app will be loaded. -->
+    <script src="main.dart.js" defer></script>
+</div>
+</body>
+</html>
